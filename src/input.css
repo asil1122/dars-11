@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-track {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-arrow {
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+
+.slider__img {
+    border-radius: 20px;
+}
+
+.slick-next {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("https://www.topgear.com/sites/default/files/images/cars-road-test/carousel/2021/05/5b7edba7dd9ba925837d1729d0a80633/dsc06889.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.slick-prev {
+    position: absolute;
+    z-index: 10000;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("https://frankfurt.apollo.olxcdn.com/v1/files/lmul7bcspa3b2-UZ/image");
+    background-size: cover;
+    background-position: center;
+}
+
+.slider {
+    position: relative;
+}
+
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 15px;
+}
+
+.slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #5656f4;
+    border-radius: 50%;
+    display: block;
+  }
+  
+  .slick-dots .slick-active button {
+    background-color: red
+  }
+
+  .ot{
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
